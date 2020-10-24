@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Appointment Request Sent{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Appointment Request Sent</h1>
+    <h2>Review Your Information</h2>
+    <p>Name: {{ your_name }}</p>
+    <p>Phone: {{ your_phone }}</p>
+    <p>Email: {{ your_email }}</p>
+    <p>Address: {{ your_address }}</p>
+    <p>Schedule: {{ your_schedule }}</p>
+    <p>Day: {{ your_day }}</p>
+    <p>Message: {{ your_message }}</p>
+</div>
+{% endblock %}
