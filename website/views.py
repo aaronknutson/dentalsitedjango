@@ -60,7 +60,7 @@ def appointment(request):
         #send an email
         send_mail(
             your_name + ' appointment request', # subject
-            'Email:' + your_email + ' Schedule:' + your_schedule + ' Day:' + your_day + ' Message:' + your_message, # message
+            'Email:' + your_email + '/n Schedule:' + your_schedule + '/n Day:' + your_day + '/n Message:' + your_message, # message
             your_email, # from email
             ['socialmedia.customerservice2@gmail.com'], # to email
             )
